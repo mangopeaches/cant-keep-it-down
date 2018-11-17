@@ -2,11 +2,13 @@
 
 This is a really basic game created with the [LOVE 2D engine](https://love2d.org/).
 
+## Dependencies
+
 To run it you will need to have the LOVE 2D engine installed and launch the application through a Lua interpreter. You can use an IDE like [ZeroBrane Studio](https://studio.zerobrane.com/), for example.
 
 ## Gameplay
 
-The object of the game is to catch as many projectiles coming out of the player which not getting hit by enemies. Catching projectiles will award you points, where as getting hit my enemies will subtract points from your score. There are different levels which can be configured. Levels can be completed in a number of various conditions, such as timed levels, which will persist for a given duration, and scored levels, which will persist until a given score is achieved. Levels will vary by changing the scale of the objects in the game and as you change levels you will notice the speed, spawn intervals, and behaviors of objects changes based on the level configration.
+The object of the game is to catch as many projectiles coming out of the player while not getting hit by enemies. Catching projectiles will award you points, where as getting hit my enemies will subtract points from your score. There are different levels which can be configured. Levels can be completed in a number of various conditions, such as timed levels, which will persist for a given duration, and scored levels, which will persist until a given score is achieved. Levels will vary by changing the scale of the objects in the game and as you change levels you will notice the speed, spawn intervals, and behaviors of objects changes based on the level configration.
 
 The assets for the game are a work in progress so for now the player is the large outlines square, the enemies are the small outlines squares, and projectiles are the small filled squares.
 
