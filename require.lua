@@ -1,8 +1,8 @@
 -- all required files and classes
 Object = require 'lib.classic'
-require 'src.moveable'
-require 'src.scaleable'
-require 'src.lifetime'
+require 'src.mixins.lifetime'
+require 'src.mixins.moveable'
+require 'src.mixins.scaleable'
 require 'src.timer'
 require 'src.variable_timer'
 require 'src.player'

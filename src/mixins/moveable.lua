@@ -1,4 +1,4 @@
--- essentially mixins for all moveable objects
+-- mixins for all moveable objects
 -- @author Thomas Breese
 
 Moveable = Object:extend()
