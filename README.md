@@ -75,6 +75,9 @@ The structure of the code is as such:
 
 That's it! there's a bit more details than that, but that's the gist of how it all works.
 
+If you want to run with VSCode, this guide should get you moving in the right direction:
+https://marketplace.visualstudio.com/items?itemName=pixelbyte-studios.pixelbyte-love2d
+
 # Contributing
 
 1. Create your own fork

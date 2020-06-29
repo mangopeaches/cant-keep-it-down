@@ -8,12 +8,18 @@ Player:implement(Scaleable)
 
 -- constructor for a new player
 function Player:new()
-  self.width = 50
-  self.height = 50
+  self.width = 30
+  self.height = 30
   self.speed = 100
   self.speed_max = 1000
   self.speed_min = 100
   self.speed_multiplier = 1.1 -- 10% multiplier
+  self.up_image = love.graphics.newImage('assets/up.jpg')
+  self.down_image = love.graphics.newImage('assets/up.jpg')
+  self.left_image = love.graphics.newImage('assets/right.jpg')
+  self.right_image = love.graphics.newImage('assets/right.jpg')
+  self.neutral_image = love.graphics.newImage('assets/sample.jpg')
+  self.image = self.neutral_image -- start out neutral
   
   -- start in the center of the screen
   self.x = love.graphics.getWidth() / 2 - self.width / 2
@@ -29,12 +35,16 @@ function Player:update(dt)
   
   -- movement in all directions
   if love.keyboard.isDown('right') then
+    self.image = self.right_image
     x = x + self.speed * dt
   elseif love.keyboard.isDown('left') then
+    self.image = self.left_image
     x = x - self.speed * dt
   elseif love.keyboard.isDown('up') then
+    self.image = self.up_image
     y = y - self.speed * dt
   elseif love.keyboard.isDown('down') then
+    self.image = self.down_image
     y = y + self.speed * dt
   end
   
@@ -58,7 +68,9 @@ end
 
 -- draw the player
 function Player:draw()
-  love.graphics.rectangle('line', self.x, self.y, self.width, self.height)
+  --love.graphics.newImage('../assets/person')
+  love.graphics.draw(self.image, self.x, self.y)--, self.width, self.height)
+  --love.graphics.rectangle('line', self.x, self.y, self.width, self.height)
 end
 
 return Player

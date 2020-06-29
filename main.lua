@@ -21,5 +21,7 @@ end
 
 -- draw function, puts items onto the screen
 function love.draw()
+  --love.graphics.setBackgroundColor(255, 255, 255)
+  --love.graphics.setColor(0, 0, 0)
   play:draw()
 end
